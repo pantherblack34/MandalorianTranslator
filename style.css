@@ -1,0 +1,10 @@
+
+
+.wrapper{
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(136, 127, 255);
+}
