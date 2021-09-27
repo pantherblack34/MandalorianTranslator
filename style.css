@@ -1,6 +1,18 @@
+:root{
+    --primary-color: #0D9488;
+    --secondary-color: #2DD4BF;
+    --bg1: #334155;
+    --bg2: #64748B;
+    --bg3: #94A3B8;
+}
+
+
+
 body, html{
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                                
 }
 
 .wrapper{
@@ -10,7 +22,7 @@ body, html{
     height: 623px;
     margin: auto;
     padding: 10px;
-    background-color: rgb(136, 127, 255);
+    background-image: linear-gradient(to right bottom, var(--bg3), var(--bg2), var(--bg1));
 }
 .container{
     width: 800px;
@@ -19,7 +31,7 @@ body, html{
     margin: auto;  
     margin-top: -10px;
     margin-left: -10px;  
-    background-color: rgb(255, 127, 217) ;
+    background-color: var(--primary-color);
 }
 h1{
     width: 600px;
@@ -42,6 +54,9 @@ p{
     outline: none;
     border-radius: 15px;
 }
+#input-text[type="text"]{
+    font-size: 28px;
+}
 
 #button{
     width: 500px;
@@ -50,6 +65,7 @@ p{
     position: relative;
     top: -260px;
     bottom: 220px;
+    font-size: xx-large;
     border-radius: 20px;
 }
 .trans-text{
@@ -62,7 +78,7 @@ p{
     display: block;
     width: 750px;
     height: 80px;
-    background-color: #2be26a;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 340px;
     left: 310px;
@@ -71,7 +87,7 @@ p{
 #about{
     width: 800px;
     height: 200px;
-    background-color: aqua;
+    background-color: var(--primary-color);
     position: absolute;
     top: 443px;
     left: 283px;

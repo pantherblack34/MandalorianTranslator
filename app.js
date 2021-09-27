@@ -13,12 +13,12 @@ function apiCall(text){
 function translation(){
     const msgTxt = inputTxt.value;
     /*calling the server function to get the req. file */
-    fetch(apicall(msgTxt))
+    fetch(apiCall(msgTxt))
     /*the req. file is recieved in the json data */
     .then(response => response.json())
     /*retrieve the required data from the inner file */
     .then(json =>{
-        const tranlatedTxt = json.contents.translated;
+        const translatedTxt = json.contents.translated;
         /*retrieved data is than showed in the output div via innerHTML attribute */
         outputTxt.innerHTML = translatedTxt;
     })
